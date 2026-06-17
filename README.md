@@ -1,5 +1,39 @@
 # phi-fiber-dsp  
 Topologiczny filtr **φ** dla sygnałów światłowodowych (DSP), oparty na modelu **Λ–τ–ρ** z TRM‑Geometry‑Core.
+### Podwójne przejście (double-pass)
+
+Filtr φ działa w dwóch przejściach:
+
+1. **Pierwsze przejście (Λ → τ)**  
+   Obraz jest analizowany pod kątem kierunku przepływu i lokalnych zmian.  
+   To wyciąga komponent τ (transformacja).
+
+2. **Drugie przejście (τ → Λ)**  
+   Ten sam obraz przechodzi ponownie przez filtr, ale w kierunku stabilizacji.  
+   To wyciąga komponent Λ (struktura).
+
+Różnica między tymi przejściami ujawnia defekt:
+
+
+
+\[
+\rho = \Lambda - \tau
+\]
+
+
+
+A finalny operator:
+
+
+
+\[
+\phi = \Lambda + \tau - \rho
+\]
+
+
+
+działa tylko wtedy, gdy wykonane są **oba przejścia**.  
+Bez podwójnego przejścia filtr nie pokazuje struktury światła, tylko zwykły gradient.
 
 ## Idea
 
