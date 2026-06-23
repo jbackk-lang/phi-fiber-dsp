@@ -1,3 +1,5 @@
+## Dokumentacja online
+https://jbackk-lang.github.io/
 # phi-fiber-dsp  
 Topologiczny filtr **φ** dla sygnałów światłowodowych (DSP), oparty na modelu **Λ–τ–ρ** z TRM‑Geometry‑Core.
 ### Podwójne przejście (double-pass)
